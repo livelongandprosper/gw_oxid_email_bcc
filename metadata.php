@@ -1,10 +1,10 @@
 <?php
 /**
  * @abstract
- * @author 	Gregor Wendland <kontakt@gewend.de>
- * @copyright Copyright (c) 2016-2018, Gregor Wendland
+ * @author 	Gregor Wendland <oxid@gregor-wendland.com>
+ * @copyright Copyright (c) 2016-2020, Gregor Wendland
  * @package gw
- * @version 2018-09-14
+ * @version 2020-05-13
  */
 
 /**
@@ -19,23 +19,24 @@ $aModule = array(
     'id'           => 'gw_oxid_email_bcc',
     'title'        => 'E-Mail-Kopie an Administrator',
 //     'thumbnail'    => 'out/admin/img/logo.jpg',
-    'version'      => '1.1',
+    'version'      => '1.2',
     'author'       => 'Gregor Wendland',
-    'email'		   => 'kontakt@gewend.de',
-    'url'		   => 'https://www.gewend.de',
+    'email'		   => 'oxid@gregor-wendland.com',
+    'url'		   => 'https://gregor-wendland.com',
     'description'  => array(
-    	'de'		=> '<ul>
-							<li>Alle Shop-E-Mails an einstellbare E-Mail-Adressen schicken</li>
+    	'de'		=> 'Das Modul manipuliert die Sende-Funktion der Email-Klasse des Shops und bietet folgende Optionen:<ul>
+							<li>Alle Shop-E-Mails an einstellbare E-Mail-Adressen als Blind Carbon Copy (BCC) schicken umleiten</li>
 						</ul>',
     ),
-    
+
     /* extend */
     'extend'       => array(
 		'oxemail' 		=> 'gw/gw_oxid_email_bcc/application/models/gw_oxid_email_bcc_oxemail',
     ),
     /* settings */
     'settings'		=> array(
-         array( 'group' => 'general', 	'name' => 'gw_oxid_email_bcc_mail', 'type' => 'arr'),
+		array( 'group' => 'general', 	'name' => 'gw_oxid_email_bcc_mail', 'type' => 'arr'),
+		array( 'group' => 'general', 	'name' => 'gw_oxid_email_bcc_redirect_all', 'type' => 'bool', 'value' => 'false'),
     ),
 
 );
