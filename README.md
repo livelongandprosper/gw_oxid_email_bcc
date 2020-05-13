@@ -1,4 +1,4 @@
-# Module email bcc
+# Module email bcc and redirect
 This module enables you to receive all emails send by OXID eShop as bcc.
 There is also an option to redirect all messages of you have to debug something.
 
