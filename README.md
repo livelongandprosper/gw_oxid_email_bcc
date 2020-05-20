@@ -1,6 +1,8 @@
 # Module email bcc and redirect
-This module enables you to receive all emails send by OXID eShop as bcc.
-There is also an option to redirect all messages of you have to debug something.
+This module enables you to
+* receive all emails send by OXID eShop as bcc,
+* redirect all messages send by OXID eShop.
+This is a tool for debugging.
 
 ## Install
 * This module has to be put to the folder [shop root]**/modules/gw/gw_oxid_email_bcc/**
