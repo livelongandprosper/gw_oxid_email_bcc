@@ -3,7 +3,8 @@ This module enables you to
 * receive all emails send by OXID eShop as bcc,
 * redirect all messages send by OXID eShop,
 * send order emails again.
-This is a tool for mainly supposed for debugging.
+
+**This is a tool for mainly supposed for debugging.**
 
 ## Install
 - This module has to be put to the folder
