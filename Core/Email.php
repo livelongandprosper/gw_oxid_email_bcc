@@ -1,19 +1,21 @@
 <?php
 /**
- * @author 	Gregor Wendland <kontakt@gewend.de>
- * @version 2016-04-27
+ * @author 	Gregor Wendland <oxid@gregor-wendland.com>
+ * @version 2021-11-02
  */
+
+namespace gw\gw_oxid_email_bcc\Core;
 
 /**
  * gw_oxid_email_bcc_oxemail class.
  *
  * @extends gw_oxid_email_bcc_oxemail_parent
  */
-class gw_oxid_email_bcc_oxemail extends gw_oxid_email_bcc_oxemail_parent {
+class Email extends Email_parent {
 
 	/**
 	 * send function.
-	 * send a bcc to configured adresses or redirect them if the option gw_oxid_email_bcc_redirect_all is set
+	 * send a bcc to configured addresses or redirect them if the option gw_oxid_email_bcc_redirect_all is set
 	 *
 	 * @access public
 	 * @return bool
